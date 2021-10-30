@@ -1,0 +1,103 @@
+.hero {
+  padding-bottom: 6rem;
+  padding-top: 10rem;
+  img {
+    width: 100%;
+    top: 0;
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    vertical-align: middle;
+    
+  }
+  .content {
+    position: relative;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+    h1 {
+      font-size: 4.5rem;
+      line-height: 1;
+      --tw-text-opacity: 1;
+      color: rgba(255, 255, 255, var(--tw-text-opacity));
+      text-align: center;
+      font-weight: 700;
+
+      span {
+        color: rgba(51, 203, 154, var(--tw-text-opacity));
+        line-height: 1.7;
+      }
+    }
+    h2 {
+      --tw-space-y-reverse: 0;
+      margin-top: calc(2rem * (1 - var(--tw-space-y-reverse)));
+      margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+      font-size: 1.75rem;
+      --tw-text-opacity: 1;
+      color: rgba(238, 238, 238, var(--tw-text-opacity));
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+  .btns {
+    --tw-text-opacity: 1;
+    color: rgba(238, 238, 238, var(--tw-text-opacity));
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2rem * (1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+    gap: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .maintaine{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+      transition-duration: 0.3s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: background-color, border-color, color, fill, stroke;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 0.15s;
+      stroke-width: 2;
+      line-height: 1.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 0.125rem;
+      padding: 0.5rem 1rem;
+      --tw-text-opacity: 1;
+    color: rgba(255,255,255,var(--tw-text-opacity));
+      background: rgb(69, 104, 220);
+      &:hover{
+        --tw-bg-opacity: 1;
+        background-color: rgba(36,73,193,var(--tw-bg-opacity));
+      }
+    }
+    .contribute{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        transition-duration: 0.3s;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: background-color, border-color, color, fill, stroke;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.15s;
+        stroke-width: 2;
+        line-height: 1.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        border-radius: 0.125rem;
+        padding: 0.5rem 1rem;
+        background-color: rgb(51, 203, 154);
+        color: rgb(22, 24, 29);
+        &:hover{
+          --tw-bg-opacity: 1;
+          background-color: rgba(36,73,193,var(--tw-bg-opacity));
+        }
+      }
+  }
+}
