@@ -1,6 +1,27 @@
 import React from "react";
+import Faqcomponent from "./Faqcomponent";
+const faqData = [
+  {
+    question: "I'm new to open-source, where do I start?",
+    answer:
+      "Head to DeepSource Discover, find an issue you would like to fix and send a pull request. If you've any questions, ping us at #hacktoberfest channel in Discord.",
+  },
+  {
+    question: "Does DeepSource provide any special swag?",
+    answer:
+      "DigitalOcean will send DeepSource swag to all participants who create at least 4 pull requests during Hacktoberfest. Apart from this, if you're a maintainer participating in Hacktoberfest with DeepSource Discover with at least 20 contributors, we'll send special swag to you. Expect an e-mail from us in the second week of November '21.",
+  },
+  {
+    question: "I've a question about Hacktoberfest.",
+    answer:
+      "You can find more information about Hacktoberfest at hacktoberfest.digitalocean.com. If you've a question, please ask the same at Hacktoberfest Discord server.",
+  },
+];
+
+
 
 function Faq() {
+ 
   return (
     <div>
       <section className="w-full bg-ink-300 relative z-10">
@@ -12,151 +33,10 @@ function Faq() {
           </div>{" "}
           <div className="w-full">
             <div className="text-vanilla-100 text-xl divide-y divide-ink-100">
-              <div className="z-accordion-item py-4 text-vanilla-200">
-                <div className="flex items-center transition-all duration-700 ease-in-out group cursor-pointer">
-                  <span className="flex-1 font-medium">
-                    I'm new to open-source, where do I start?
-                  </span>
-                  <svg
-                    viewBox="0 0 24 24"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    fill="none"
-                    className="transform transition-all duration-DEFAULT ease-in-out group stroke-1.5 z-icon stroke-current w-6 h-6 z-icon--chevron-right text-slate text-vanilla-200 rotate-90 group-hover:text-vanilla-200"
-                  >
-                    <polyline points="9 18 15 12 9 6"></polyline>
-                  </svg>
-                </div>
-                <div className="overflow-hidden transition-max-height duration-300 ease-in-out text-sm leading-6 max-h-52">
-                  {" "}
-                  <article className="prose max-w-full">
-                    <div className="nuxt-content">
-                      <p>
-                        Head to{" "}
-                        <a href="" rel="nofollow noopener noreferrer">
-                          DeepSource Discover
-                        </a>
-                        , find an issue you would like to fix and send a pull
-                        request. If you've any questions, ping us at{" "}
-                        <code>#hacktoberfest</code> channel in{" "}
-                        <a
-                          href="https://deepsource.io/discord"
-                          rel="nofollow noopener noreferrer"
-                          target="_blank"
-                        >
-                          Discord
-                        </a>
-                        .
-                      </p>
-                    </div>
-                  </article>
-                </div>
-              </div>
-              <div className="z-accordion-item py-4 text-vanilla-200">
-                <div className="flex items-center transition-all duration-700 ease-in-out group cursor-pointer">
-                  <span className="flex-1 font-medium">
-                    Does DeepSource provide any special swag?
-                  </span>
-                  <svg
-                    viewBox="0 0 24 24"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    fill="none"
-                    className="transform transition-all duration-DEFAULT ease-in-out group stroke-1.5 z-icon stroke-current w-6 h-6 z-icon--chevron-right text-slate group-hover:text-vanilla-200"
-                  >
-                    <polyline points="9 18 15 12 9 6"></polyline>
-                  </svg>
-                </div>
-                <div className="overflow-hidden transition-max-height duration-300 ease-in-out text-sm leading-6 max-h-0">
-                  <article className="prose max-w-full">
-                    <div className="nuxt-content">
-                      <p>
-                        DigitalOcean will send DeepSource swag to all
-                        participants who create at least 4 pull requests during
-                        Hacktoberfest. Apart from this, if you're a maintainer
-                        participating in Hacktoberfest with DeepSource Discover
-                        with at least 20 contributors, we'll send special swag
-                        to you. Expect an e-mail from us in the second week of
-                        November '21.
-                      </p>
-                    </div>
-                  </article>
-                </div>
-              </div>
-              <div className="z-accordion-item py-4 text-vanilla-200">
-                <div className="flex items-center transition-all duration-700 ease-in-out group cursor-pointer">
-                  <span className="flex-1 font-medium">
-                    I've a question about Hacktoberfest.
-                  </span>
-                  <svg
-                    viewBox="0 0 24 24"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    fill="none"
-                    className="transform transition-all duration-DEFAULT ease-in-out group stroke-1.5 z-icon stroke-current w-6 h-6 z-icon--chevron-right text-slate group-hover:text-vanilla-200"
-                  >
-                    <polyline points="9 18 15 12 9 6"></polyline>
-                  </svg>
-                </div>
-                <div className="overflow-hidden transition-max-height duration-300 ease-in-out text-sm leading-6 max-h-0">
-                  <article className="prose max-w-full">
-                    <div className="nuxt-content">
-                      <p>
-                        You can find more information about Hacktoberfest at{" "}
-                        <a
-                          href=""
-                          rel="nofollow noopener noreferrer"
-                          target="_blank"
-                        >
-                          hacktoberfest.digitalocean.com
-                        </a>
-                        . If you've a question, please ask the same at{" "}
-                        <a
-                          href=""
-                          rel="nofollow noopener noreferrer"
-                          target="_blank"
-                        >
-                          Hacktoberfest Discord server
-                        </a>
-                        .
-                      </p>
-                    </div>
-                  </article>
-                </div>
-              </div>
-              <div className="z-accordion-item py-4 text-vanilla-200">
-                <div className="flex items-center transition-all duration-700 ease-in-out group cursor-pointer">
-                  <span className="flex-1 font-medium">
-                    I have a support query about DeepSource.
-                  </span>
-                  <svg
-                    viewBox="0 0 24 24"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    fill="none"
-                    className="transform transition-all duration-DEFAULT ease-in-out group stroke-1.5 z-icon stroke-current w-6 h-6 z-icon--chevron-right text-slate group-hover:text-vanilla-200"
-                  >
-                    <polyline points="9 18 15 12 9 6"></polyline>
-                  </svg>
-                </div>
-                <div className="overflow-hidden transition-max-height duration-300 ease-in-out text-sm leading-6 max-h-0">
-                  <article className="prose max-w-full">
-                    <div className="nuxt-content">
-                      <p>
-                        Please ping us at{" "}
-                        <a
-                          href=""
-                          rel="nofollow noopener noreferrer"
-                          target="_blank"
-                        >
-                          deepsource.io/support
-                        </a>{" "}
-                        and we'll get back to you.
-                      </p>
-                    </div>
-                  </article>
-                </div>
-              </div>
+              {faqData.map((e)=>{
+                 return  <Faqcomponent question={e.question} answer={e.answer} />
+
+              })}
             </div>
           </div>
         </div>
